@@ -24,6 +24,9 @@ body {
             a {
                 color: #F27405;
                 text-decoration: none;
+                :hover {
+                    color: #fff;
+                }
             }
         }
     }

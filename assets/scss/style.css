@@ -20,6 +20,8 @@ body {
       .navbar .nav li a {
         color: #F27405;
         text-decoration: none; }
+        .navbar .nav li a :hover {
+          color: #fff; }
 
 .home {
   display: block;
