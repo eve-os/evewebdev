@@ -46,7 +46,6 @@ body {
 .home {
   width: 100%;
   height: 100vh;
-  text-align: center;
   background-color: #0d0d0d;
   padding-top: 60px;
 }
@@ -58,6 +57,7 @@ body {
   color: #D9A404;
   font-family: 'Unica One', cursive;
   font-size: 5em;
+  text-align: center;
 }
 
 .about {
@@ -104,7 +104,7 @@ body {
   letter-spacing: .1em;
 }
 .knows li img {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 .knows li span {
@@ -164,6 +164,15 @@ body {
   .about, .home, .portfolio, .knows {
     height: auto;
     padding-bottom: 10px;
+    width: 95%;
+    margin: 5px auto;
+    border-radius: 5px;
+  }
+
+  .header {
+    width: 95%;
+    border-radius: 5px;
+    margin: 5px auto;
   }
 
   .header {
@@ -171,23 +180,35 @@ body {
   }
 
   .home h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .about p {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .about button {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .portfolio button {
-    font-size: 2em;
+    font-size: 1em;
   }
   
   .portfolio h1 {
-    font-size: 2em;
+    font-size: 1em;
+  }
+
+  .portfolio img {
+    width: 60%;
+  }
+
+  .knows li {
+    height: 120px;
+  }
+
+  .knows li span {
+    font-size: 1em;
   }
 }
 
