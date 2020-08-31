@@ -1,29 +1,24 @@
 body {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: 0;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
   font-family: 'IBM Plex Sans', sans-serif;
 }
-.navbar .nav {
-  display: flex;
-  padding: 5px;
-  justify-content: center;
+
+.header {
+  position: fixed;
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  z-index: 10;
+  background-color: #0d0d0d;
 }
-.navbar .nav li {
+.header .header_menu {
+  text-align: center;
+}
+.header .header_menu ul li {
+  display: inline-block;
   font-size: 14px;
   list-style: none;
-  padding: 20px;
   text-transform: uppercase;
 }
-.navbar .nav li a {
+.header .header_menu ul li a {
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -31,7 +26,7 @@ body {
   padding: 5px 20px;
   position: relative;
 }
-.navbar .nav li a:after {
+.header .header_menu ul li a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -43,80 +38,78 @@ body {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.navbar .nav li a:hover:after {
+.header .header_menu ul li a:hover:after {
   width: 100%;
   left: 0;
 }
 
 .home {
-  display: block;
   width: 100%;
   height: 100vh;
   text-align: center;
   background-color: #0d0d0d;
-  padding-top: 100px;
+  padding-top: 60px;
 }
-.home img {
+.home .home_img {
   mix-blend-mode: hard-light;
-  max-width: 80%;
+  max-width: 100%;
 }
 .home h1 {
   color: #D9A404;
   font-family: 'Unica One', cursive;
-  font-size: 90px;
+  font-size: 5em;
 }
 
 .about {
   background-color: #D9A404;
   color: #0d0d0d;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
-  padding-top: 55px;
-}
-.about p {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 40px;
-  width: 90%;
-  margin: 0 auto;
+  padding: 60px 0 10px 0;
 }
 .about button {
   background-color: #D93030;
   border: none;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
-  width: 20%;
+  width: auto;
   font-size: 50px;
   border-radius: 20px;
   cursor: pointer;
 }
+.about img {
+  max-width: 70%;
+}
+.about p {
+  font-size: 2em;
+  margin: 0 auto;
+}
 
 .knows {
   background-color: #D93030;
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  grid-gap: 1px;
-  grid-template-columns: repeat(4, 1fr);
-  padding-top: 55px;
+  padding: 60px 0;
 }
 .knows li {
   background-color: #0d0d0d;
-  width: 259px;
-  height: 250px;
+  display: flex;
+  height: 200px;
+  margin: 5px;
   list-style: none;
-  margin: 25px auto;
   color: #D9A404;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 10px;
+  text-align: center;
+  letter-spacing: .1em;
 }
 .knows li img {
-  max-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .knows li span {
   font-family: 'Unica One', cursive;
-  font-size: 50px;
+  font-size: 2rem;
   display: block;
   margin: 0 auto;
 }
@@ -139,10 +132,54 @@ body {
   border: none;
   padding: 20px;
   color: #fff;
-  width: 40%;
+  width: auto;
   font-size: 50px;
   border-radius: 20px;
   cursor: pointer;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .about, .home, .portfolio, .knows {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .home h1 {
+    font-size: 4em;
+  }
+  
+  .home p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 787px) {
+  .about, .home, .portfolio, .knows {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .home h1 {
+    font-size: 3em;
+  }
+
+  .about p {
+    font-size: 2em;
+  }
+
+  .about button {
+    font-size: 2em;
+  }
+
+  .portfolio button {
+    font-size: 2em;
+  }
+  
+  .portfolio h1 {
+    font-size: 2em;
+  }
+}
+

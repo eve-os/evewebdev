@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
 
-  <link rel="shortcut icon" href="assets/ico/favicon.ico">
-  <link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
-  <link rel="stylesheet" href="assets/scss/style.css">
-  
-  <title>Eve Desenvolvedora-Web</title>
+    <link rel="stylesheet" href="web/css/style.css">
+    <link rel="stylesheet" href="web/css/normalize.css">
+    <link rel="stylesheet" href="web/css/grid.css">
+
+
+    <title>Eve Desenvolvedora</title>
 </head>
 
 <body>
-
-        <div class="navbar">
-            <div class="nav">
-                <li><a href="#home">Página Inicial</a></li>
-                <li><a href="#about">Sobre Mim</a></li>
-                <li><a href="#knowledge">Conhecimento</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-            </div>
+    <!-- menu -->
+    <header class="header">
+        <div class="container">
+            <nav class="grid-16 header_menu">
+                <ul>
+                    <li><a href="#home">Página Inicial</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#knowledge">Conhecimento</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                </ul>
+            </nav>
         </div>
-<div class="home" id="home"> 
-  <img src="img/homeimg.png" max-width="80%"/>
-  <h1 class="animate__animated animate__jackInTheBox">Eve Desenvolvedora-Web</h1>
+    </header>
 
-</div>
-<div class="about" id="about">
-    <img src="img/aboutimg.png" width="20%"/>
-    <p>Formada em Análise e Desenvolvimento 
-        de Sistemas pela Universidade Grande Rio e apaixonada por 
-        desenvolvimento web (Front-End) utilizando
-        tecnologias como NodeJS, ReactJS, Bootstrap, entre outras.</p>
+    <section class="home" id="home">
+        <div class="container">
+            <img src="img/homeimg.png" class="home_img"/>
+            <h1>Eve Desenvolvedora</h1>
+        </div>
+    </section>
 
-        <button type="submit">
-            CONTATO
-        </button>
-</div>
-<div class="knows" id="knowledge">
-    <li>
-        <img src="img/css.png" />
-        <span>css</span>
-    </li>
-    <li>
-        <img src="img/html.png" />
-        <span>html</span>
-    </li>
-    <li>
-        <img src="img/js.png" />
-        <span>javascript</span>
-    </li>
-    <li>
-        <img src="img/bootstrap.png" />
-        <span>bootstrap</span>
-    </li>
-    <li>
-        <img src="img/nodejs.png" />
-        <span>node.js</span>
-    </li>
-    <li>
-        <img src="img/reactjs.png" />
-        <span>react.js</span>
-    </li>
-    <li>
-        <img src="img/git.png" />
-        <span>git</span>
-    </li>
-    <li>
-        <img src="img/mongodb.png" />
-        <span>mongodb</span>
-    </li>
-</div>
-<div class="portfolio" id="portfolio">
-    <img src="img/Octocat.png"/>
-    <p>Conheça meus projetos no GitHub.</p>
-    <button type="submit">
-        CLIQUE AQUI
-    </button>
-</div>
+            <section class="about" id="about">
+                <div class="container">
+                <img src="img/aboutimg.png" />
+                <p>Formada em Análise e Desenvolvimento
+                    de Sistemas pela Universidade Grande Rio e apaixonada por
+                    desenvolvimento web (Front-End) utilizando
+                    tecnologias como NodeJS, ReactJS, Bootstrap, entre outras.</p>
+
+                <button type="submit">
+                    CONTATO
+                </button>
+            </div>
+            </section>
+            <section class="knows" id="knowledge">
+                <div class="container">
+                <li class="grid-1-3">
+                    <img src="img/css.png" />
+                    <span>css</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/html.png" />
+                    <span>html</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/js.png" />
+                    <span>javascript</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/bootstrap.png" />
+                    <span>bootstrap</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/nodejs.png" />
+                    <span>node.js</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/reactjs.png" />
+                    <span>react.js</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/git.png" />
+                    <span>git</span>
+                </li>
+                <li class="grid-1-3">
+                    <img src="img/mongodb.png" />
+                    <span>mongodb</span>
+                </li>
+            </div>
+            </section>
+
+            <div class="portfolio" id="portfolio">
+                <img src="img/Octocat.png" />
+                <p>Conheça meus projetos no GitHub.</p>
+                <button type="submit">
+                    CLIQUE AQUI
+                </button>
+            </div>
 
 </body>
+
 </html>
