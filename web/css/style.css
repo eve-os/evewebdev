@@ -201,12 +201,16 @@ body {
   }
 
   .portfolio img {
-    width: 60%;
+    width: 50%;
   }
 
   .knows li {
-    height: 120px;
+    height: 130px;
     padding: 5px;
+  }
+
+  .knows li img {
+    width: 50%;
   }
 
   .knows li span {
