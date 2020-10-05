@@ -23,7 +23,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
-  padding: 5px 5px;
+  padding: 5px;
   position: relative;
 }
 .header .header_menu ul li a:after {
@@ -90,8 +90,6 @@ body {
 .social_media {
   display: inline-block;
   margin: 10px;
-  width: 400px;
-  height: 80px;
 }
 
 .social_media img {
