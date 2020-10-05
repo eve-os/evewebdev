@@ -90,6 +90,8 @@ body {
 .social_media {
   display: inline-block;
   margin: 10px;
+  width: 400px;
+  height: 80px;
 }
 
 .social_media img {
